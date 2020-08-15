@@ -1,0 +1,11 @@
+{
+    "name": "spidertrontiers",
+    "version": "0.0.1",
+    "title": "Spidertron Tiers",
+    "author": "Zangeti",
+    "contact": "",
+    "homepage": "https://discord.gg/kC53xn2",
+    "factorio_version": "1.0",
+    "dependencies": ["base >= 1.0"],
+    "description": "Creates different Spidertron Tiers. Now there are Mk2 and Mk3 Spidertrons, which improve upon Mk1 through increased fire-rate, increased leg stretch length, larger equipment grids and inventory size and increased health! Check out the linked Discord if you have questions, bugs or feature requests!"
+}
