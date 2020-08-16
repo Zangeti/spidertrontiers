@@ -237,7 +237,7 @@ function make_spidertron_mk2_leg(number, base_sprite, ending_sprite)
 	    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
 	    icon = "__spidertrontiers__/graphics/icons/spidertron_mk3.png",
 	    icon_size = 64, icon_mipmaps = 4,
-	    walking_sound_volume_modifier = 0.8, --modified
+	    walking_sound_volume_modifier = 0.6, --modified
 	    working_sound = 
 	    {
 	      match_progress_to_activity = true,
@@ -246,9 +246,9 @@ function make_spidertron_mk2_leg(number, base_sprite, ending_sprite)
 	    },
 	    part_length = 3.5,
 	    initial_movement_speed = 0.06,
-	    movement_acceleration = 0.03,
+	    movement_acceleration = 0.04,
 	    max_health = 100,
-	    movement_based_position_selection_distance = 6, --modified
+	    movement_based_position_selection_distance = 5, --modified
 	    selectable_in_game = false,
 	    graphics_set = spidertron_mk2_animations.legs[number],
 	}

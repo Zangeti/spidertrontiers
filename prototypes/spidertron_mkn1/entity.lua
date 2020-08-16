@@ -84,7 +84,7 @@ local spider_tron_mk_1 = {
     guns = { "spidertron-mkn1-rocket-launcher-1", "spidertron-mkn1-machine-gun-1" },
     inventory_size = 20,
     equipment_grid = "spidertron-mk-1-equipment-grid",
-    height = 0,
+    height = 0.5,
     torso_rotation_speed = 0.005,
     chunk_exploration_radius = 1, --modified
     selection_priority = 51,
@@ -97,62 +97,56 @@ local spider_tron_mk_1 = {
     chain_shooting_cooldown_modifier = 5, --modified
     spider_engine = {
       	legs = {
-	        { -- 1
+        {
+          name = "tank-smoke",
+          deviation = {0.25, 0.25},
+          frequency = 50,
+          position = {0, -0.5},
+          starting_frame = 0,
+          starting_frame_deviation = 60
+        }
+      }
+    },
+    movement_energy_consumption = "450kW",
+    automatic_weapon_cycling = true,
+    chain_shooting_cooldown_modifier = 0.5,
+    spider_engine = {
+      	legs = {
+			{ -- 1
 	          	leg = "spidertron-mk-1-leg-1",
-	          	mount_position = util.by_pixel(15, -22),--{0.5, -0.75},
-	          	ground_position = {2.25, -2.5},
+	          	mount_position = util.by_pixel(12.9, 17.8),--{0.5, -0.75},
+	          	ground_position = {1.6*1.7, 2.3*1.2},
 	          	blocking_legs = {2},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
-	        },
-	        { -- 2
+        	},
+        	{ -- 2
 	          	leg = "spidertron-mk-1-leg-2",
-	          	mount_position = util.by_pixel(23, -10),--{0.75, -0.25},
-	          	ground_position = {3, -1},
+	          	mount_position = util.by_pixel(20.9, -6.8),--{0.75, -0.25},
+	          	ground_position = {2.7*1.4, -0.87*1.4},
 	          	blocking_legs = {1, 3},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
-	        },
-	        { -- 3
+       		},
+        	{ -- 3
 	          	leg = "spidertron-mk-1-leg-3",
-	          	mount_position = util.by_pixel(25, 4),--{0.75, 0.25},
-	          	ground_position = {3, 1},
+	          	mount_position = util.by_pixel(0, -22),--{0.75, 0.25},
+	          	ground_position = {0*1.4, -2.8*1.4},
 	          	blocking_legs = {2, 4},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
-	        },
-	        { -- 4
+        	},
+        	{ -- 4
 	          	leg = "spidertron-mk-1-leg-4",
-	          	mount_position = util.by_pixel(15, 17),--{0.5, 0.75},
-	          	ground_position = {2.25, 2.5},
+	          	mount_position = util.by_pixel(-20.9, -6.8),--{0.5, 0.75},
+	          	ground_position = {-2.7*1.4, -0.87*1.4},
 	          	blocking_legs = {3},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
-	        },
-	        { -- 5
+        	},
+        	{ -- 5
 	          	leg = "spidertron-mk-1-leg-5",
-	          	mount_position = util.by_pixel(-15, -22),--{-0.5, -0.75},
-	          	ground_position = {-2.25, -2.5},
-	          	blocking_legs = {6, 1},
+	          	mount_position = util.by_pixel(-12.9, 17.8),--{-0.5, -0.75},
+	          	ground_position = {-1.6*1.7, 2.3*1.2},
+	          	blocking_legs = {1},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
-	        },
-	        { -- 6
-	          	leg = "spidertron-mk-1-leg-6",
-	          	mount_position = util.by_pixel(-23, -10),--{-0.75, -0.25},
-	          	ground_position = {-3, -1},
-	          	blocking_legs = {5, 7},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
-	        },
-	        { -- 7
-	          	leg = "spidertron-mk-1-leg-7",
-	          	mount_position = util.by_pixel(-25, 4),--{-0.75, 0.25},
-	          	ground_position = {-3, 1},
-	          	blocking_legs = {6, 8},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
-	        },
-	        { -- 8
-	          	leg = "spidertron-mk-1-leg-8",
-	          	mount_position = util.by_pixel(-15, 17),--{-0.5, 0.75},
-	          	ground_position = {-2.25, 2.5},
-	          	blocking_legs = {7},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
-	        }
+        	}
       	},
       	military_target = "spidertron-military-target",
     }
@@ -177,52 +171,52 @@ local spider_tron_mk_1_remnants = {
     animation = make_rotated_animation_variations_from_sheet (1,
     {
       	layers = {
-        	{
-	          	filename = "__spidertrontiers__/graphics/entity/spidertron_mkn1/remnants/spidertron-remnants.png",
-	          	line_length = 1,
-	          	width = 224,
-	          	height = 224,
-	          	frame_count = 1,
-	          	variation_count = 1,
-	          	axially_symmetrical = false,
-	          	direction_count = 1,
-	         	shift = util.by_pixel(0, 0),
-	          	r_version = {
-		            filename = "__spidertrontiers__/graphics/entity/spidertron_mkn1/remnants/hr-spidertron-remnants.png",
-		            line_length = 1,
-		            width = 448,
-		            height = 448,
-		            frame_count = 1,
-		            variation_count = 1,
-		            axially_symmetrical = false,
-		            direction_count = 1,
-		            shift = util.by_pixel(0, 0),
-		            scale = 0.5,
-          		}
-        	},
-        	{
-	          	priority = "low",
-	          	filename = "__spidertrontiers__/graphics/entity/spidertron_mkn1/remnants/mask/spidertron-remnants-mask.png",
-	          	width = 184,
-	          	height = 176,
-	          	frame_count = 1,
-	         	-- tint = { r = 0.869, g = 0.5  , b = 0.130, a = 0.5 },
-	          	apply_runtime_tint = true,
-	          	direction_count = 1,
-	          	shift = util.by_pixel(9, 1),
-	          	hr_version = {
-		            priority = "low",
-		            filename = "__spidertrontiers__/graphics/entity/spidertron_mkn1/remnants/mask/hr-spidertron-remnants-mask.png",
-		            width = 366,
-		            height = 350,
-		            frame_count = 1,
-		            --tint = { r = 0.869, g = 0.5  , b = 0.130, a = 0.5 },
-		            apply_runtime_tint = true,
-		            direction_count = 1,
-		            shift = util.by_pixel(9, 1),
-		            scale = 0.5,
-          		}
-        	}
+          	{
+  	          	filename = "__spidertrontiers__/graphics/entity/spidertron_mkn1/remnants/spidertron-remnants.png",
+  	          	line_length = 1,
+  	          	width = 224,
+  	          	height = 224,
+  	          	frame_count = 1,
+  	          	variation_count = 1,
+  	          	axially_symmetrical = false,
+  	          	direction_count = 1,
+  	         	  shift = util.by_pixel(0, 0),
+  	          	r_version = {
+  		              filename = "__spidertrontiers__/graphics/entity/spidertron_mkn1/remnants/hr-spidertron-remnants.png",
+  		              line_length = 1,
+  		              width = 448,
+  		              height = 448,
+  		              frame_count = 1,
+  		              variation_count = 1,
+  		              axially_symmetrical = false,
+  		              direction_count = 1,
+  		              shift = util.by_pixel(0, 0),
+  		              scale = 0.5,
+            		}
+          	},
+          	{
+  	          	priority = "low",
+  	          	filename = "__spidertrontiers__/graphics/entity/spidertron_mkn1/remnants/mask/spidertron-remnants-mask.png",
+  	          	width = 184,
+  	          	height = 176,
+  	          	frame_count = 1,
+  	         	  -- tint = { r = 0.869, g = 0.5  , b = 0.130, a = 0.5 },
+  	          	apply_runtime_tint = true,
+  	          	direction_count = 1,
+  	          	shift = util.by_pixel(9, 1),
+  	          	hr_version = {
+  		              priority = "low",
+  		              filename = "__spidertrontiers__/graphics/entity/spidertron_mkn1/remnants/mask/hr-spidertron-remnants-mask.png",
+  		              width = 366,
+  		              height = 350,
+  		              frame_count = 1,
+  		              --tint = { r = 0.869, g = 0.5  , b = 0.130, a = 0.5 },
+  		              apply_runtime_tint = true,
+  		              direction_count = 1,
+  		              shift = util.by_pixel(9, 1),
+  		              scale = 0.5,
+            		}
+          	}
       	}
     })
 }
@@ -230,42 +224,39 @@ local spider_tron_mk_1_remnants = {
 
 function make_spidertron_mk_1_leg(number, base_sprite, ending_sprite)
   	return {
-	    type = "spider-leg",
-	    name = "spidertron-mk-1-leg-" .. number,
-	    localised_name = {"entity-name.spidertron-leg"},
-	    collision_box = {{-0.01, -0.01}, {0.01, 0.01}},
-	    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-	    icon = "__spidertrontiers__/graphics/icons/spidertron_mkn1.png",
-	    icon_size = 64, icon_mipmaps = 4,
-	    walking_sound_volume_modifier = 0.4, --modified
-	    working_sound = 
-	    {
-	      match_progress_to_activity = true,
-	      sound = sounds.spidertron_leg,
-	      audible_distance_modifier = 0.4, --modified
-	    },
-	    part_length = 3.5,
-	    initial_movement_speed = 0.06,
-	    movement_acceleration = 0.03,
-	    max_health = 100,
-	    movement_based_position_selection_distance = 2, --modified
-	    selectable_in_game = false,
-	    graphics_set = spidertron_mk_1_animations.legs[number],
+  	    type = "spider-leg",
+  	    name = "spidertron-mk-1-leg-" .. number,
+  	    localised_name = {"entity-name.spidertron-leg"},
+  	    collision_box = {{-0.01, -0.01}, {0.01, 0.01}},
+  	    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+  	    icon = "__spidertrontiers__/graphics/icons/spidertron_mkn1.png",
+  	    icon_size = 64, icon_mipmaps = 4,
+  	    walking_sound_volume_modifier = 0.4, --modified
+  	    working_sound = 
+  	    {
+    	      match_progress_to_activity = true,
+    	      sound = sounds.spidertron_leg,
+    	      audible_distance_modifier = 0.4, --modified
+  	    },
+  	    part_length = 3,
+  	    initial_movement_speed = 0.06,
+  	    movement_acceleration = 0.02,
+  	    max_health = 100,
+  	    movement_based_position_selection_distance = 4, --modified
+  	    selectable_in_game = false,
+  	    graphics_set = spidertron_mk_1_animations.legs[number],
 	}
 end
 
 
 
 data:extend{
-	spider_tron_mk_1,
-	spider_tron_mk_1_remnants,
-	make_spidertron_mk_1_leg(1),
-	make_spidertron_mk_1_leg(2),
-	make_spidertron_mk_1_leg(3),
-	make_spidertron_mk_1_leg(4),
-	make_spidertron_mk_1_leg(5),
-	make_spidertron_mk_1_leg(6),
-	make_spidertron_mk_1_leg(7),
-	make_spidertron_mk_1_leg(8),
+  	spider_tron_mk_1,
+  	spider_tron_mk_1_remnants,
+  	make_spidertron_mk_1_leg(1),
+  	make_spidertron_mk_1_leg(2),
+  	make_spidertron_mk_1_leg(3),
+  	make_spidertron_mk_1_leg(4),
+  	make_spidertron_mk_1_leg(5),
 }
 
