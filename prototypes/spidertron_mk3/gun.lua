@@ -14,7 +14,7 @@ function spidertron_mk3_rocket_launcher(number)
 	      	type = "projectile",
 	      	ammo_category = "rocket",
 	      	cooldown = 60,
-	     	range = 36,
+	     	range = 50,
 	      	projectile_creation_distance = -0.5,
 	      	projectile_center = {0, 0.3},
 	      	projectile_orientation_offset = -0.0625,

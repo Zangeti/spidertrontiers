@@ -15,7 +15,7 @@ local spidertron_mk0_cannon_1 = {
       	movement_slow_down_factor = 0,
       	projectile_creation_distance = 1.6,
       	projectile_center = {-0.15625, -0.07812},
-      	range = 25,
+      	range = 50,
       	sound = sounds.tank_gunshot,
     },
     stack_size = 5
@@ -74,7 +74,7 @@ local spidertron_mk0_machine_gun_1 = {
       	},
       	projectile_center = {-0.15625, -0.07812},
       	projectile_creation_distance = 1,
-      	range = 20,
+      	range = 25,
       	sound = sounds.heavy_gunshot
     },
     stack_size = 1

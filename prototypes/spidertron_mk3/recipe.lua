@@ -7,7 +7,7 @@ local spider_tron_mk3 = {
         ingredients = {
             {"exoskeleton-equipment", 12},
             {"fusion-reactor-equipment", 8},
-            {"rocket-part", 12},
+            {"satellite", 1},
             {"rocket-control-unit", 48},
             {"low-density-structure", 450},
             {"radar", 6},
