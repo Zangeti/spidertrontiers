@@ -84,7 +84,7 @@ local spider_tron_mk_1 = {
     guns = { "spidertron-mkn1-rocket-launcher-1", "spidertron-mkn1-machine-gun-1" },
     inventory_size = 20,
     equipment_grid = "spidertron-mk-1-equipment-grid",
-    height = 0.5,
+    height = 1,
     torso_rotation_speed = 0.005,
     chunk_exploration_radius = 1, --modified
     selection_priority = 51,
@@ -115,35 +115,35 @@ local spider_tron_mk_1 = {
 			{ -- 1
 	          	leg = "spidertron-mk-1-leg-1",
 	          	mount_position = util.by_pixel(12.9, 17.8),--{0.5, -0.75},
-	          	ground_position = {1.6*1.7, 2.3*1.2},
+	          	ground_position = {1.6*1.8, 2.3*0.9},
 	          	blocking_legs = {2},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
         	},
         	{ -- 2
 	          	leg = "spidertron-mk-1-leg-2",
 	          	mount_position = util.by_pixel(20.9, -6.8),--{0.75, -0.25},
-	          	ground_position = {2.7*1.4, -0.87*1.4},
+	          	ground_position = {2.7*1.3, -0.87*1.3},
 	          	blocking_legs = {1, 3},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
        		},
         	{ -- 3
 	          	leg = "spidertron-mk-1-leg-3",
 	          	mount_position = util.by_pixel(0, -22),--{0.75, 0.25},
-	          	ground_position = {0*1.4, -2.8*1.4},
+	          	ground_position = {0*1.3, -2.8*1.3},
 	          	blocking_legs = {2, 4},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
         	},
         	{ -- 4
 	          	leg = "spidertron-mk-1-leg-4",
 	          	mount_position = util.by_pixel(-20.9, -6.8),--{0.5, 0.75},
-	          	ground_position = {-2.7*1.4, -0.87*1.4},
+	          	ground_position = {-2.7*1.3, -0.87*1.3},
 	          	blocking_legs = {3},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
         	},
         	{ -- 5
 	          	leg = "spidertron-mk-1-leg-5",
 	          	mount_position = util.by_pixel(-12.9, 17.8),--{-0.5, -0.75},
-	          	ground_position = {-1.6*1.7, 2.3*1.2},
+	          	ground_position = {-1.6*1.8, 2.3*0.9},
 	          	blocking_legs = {1},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
         	}
@@ -242,7 +242,7 @@ function make_spidertron_mk_1_leg(number, base_sprite, ending_sprite)
   	    initial_movement_speed = 0.06,
   	    movement_acceleration = 0.02,
   	    max_health = 100,
-  	    movement_based_position_selection_distance = 4, --modified
+  	    movement_based_position_selection_distance = 2, --modified
   	    selectable_in_game = false,
   	    graphics_set = spidertron_mk_1_animations.legs[number],
 	}

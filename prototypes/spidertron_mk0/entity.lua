@@ -114,7 +114,7 @@ local spider_tron_mk0 = {
 	        { -- 3
 	          	leg = "spidertron-mk0-leg-3",
 	          	mount_position = util.by_pixel(15, 22),--{0.75, 0.25},
-	          	ground_position = {2.25*1.1, 2.5*1.1},
+	          	ground_position = {2.25*1.3, 2.5*1},
 	          	blocking_legs = {2, 4},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
 	        },
@@ -135,7 +135,7 @@ local spider_tron_mk0 = {
 	        { -- 6
 	          	leg = "spidertron-mk0-leg-6",
 	          	mount_position = util.by_pixel(-15, 22),--{-0.75, -0.25},
-	          	ground_position = {-2.25*1.1, 2.5*1.1},
+	          	ground_position = {-2.25*1.3, 2.5*1},
 	          	blocking_legs = {5},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
 	        }
@@ -234,7 +234,7 @@ function make_spidertron_mk0_leg(number, base_sprite, ending_sprite)
 	    initial_movement_speed = 0.06,
 	    movement_acceleration = 0.025,
 	    max_health = 100,
-	    movement_based_position_selection_distance = 4, --modified
+	    movement_based_position_selection_distance = 3, --modified
 	    selectable_in_game = false,
 	    graphics_set = spidertron_mk0_animations.legs[number],
 	}
