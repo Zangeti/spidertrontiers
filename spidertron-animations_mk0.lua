@@ -553,30 +553,30 @@ local spidertron_torso_graphics_set =
 
 function create_spidertron_leg_graphics_set(leg_index)
   local function get_leg_properties(part_name, suffix)
-    return leg_graphics_properties[leg_index][part_name .. "_" .. suffix] or leg_graphics_properties[leg_index][part_name]
+    return leg_graphics_properties[1][part_name .. "_" .. suffix] or leg_graphics_properties[1][part_name]
   end
 
   return
   {
-    upper_part = create_leg_part_graphics(leg_index, leg_upper_part_graphics_definitions, leg_graphics_properties[leg_index].upper_part),
-    lower_part = create_leg_part_graphics(leg_index, leg_lower_part_graphics_definitions, leg_graphics_properties[leg_index].lower_part),
-    upper_part_shadow = create_leg_part_shadow_graphics(leg_index, leg_upper_part_graphics_definitions, get_leg_properties("upper_part", "shadow")),
-    lower_part_shadow = create_leg_part_shadow_graphics(leg_index, leg_lower_part_graphics_definitions, get_leg_properties("lower_part", "shadow")),
-    upper_part_water_reflection = create_leg_part_water_reflection_graphics(leg_index, leg_upper_part_graphics_definitions, get_leg_properties("upper_part", "water_reflection")),
-    lower_part_water_reflection = create_leg_part_water_reflection_graphics(leg_index, leg_lower_part_graphics_definitions, get_leg_properties("lower_part", "water_reflection")),
+    upper_part = create_leg_part_graphics(1, leg_upper_part_graphics_definitions, leg_graphics_properties[1].upper_part),
+    lower_part = create_leg_part_graphics(1, leg_lower_part_graphics_definitions, leg_graphics_properties[1].lower_part),
+    upper_part_shadow = create_leg_part_shadow_graphics(1, leg_upper_part_graphics_definitions, get_leg_properties("upper_part", "shadow")),
+    lower_part_shadow = create_leg_part_shadow_graphics(1, leg_lower_part_graphics_definitions, get_leg_properties("lower_part", "shadow")),
+    upper_part_water_reflection = create_leg_part_water_reflection_graphics(1, leg_upper_part_graphics_definitions, get_leg_properties("upper_part", "water_reflection")),
+    lower_part_water_reflection = create_leg_part_water_reflection_graphics(1, leg_lower_part_graphics_definitions, get_leg_properties("lower_part", "water_reflection")),
 
     joint =
     {
       layers =
       {
-        create_leg_sprite_layer_definition(leg_index, 1, {}, leg_joint_graphics_definitions),
-        create_leg_sprite_layer_definition(leg_index, 3, { apply_runtime_tint = true }, leg_joint_graphics_definitions)
+        create_leg_sprite_layer_definition(1, 1, {}, leg_joint_graphics_definitions),
+        create_leg_sprite_layer_definition(1, 3, { apply_runtime_tint = true }, leg_joint_graphics_definitions)
       }
     },
 
-    joint_shadow = create_leg_sprite_layer_definition(leg_index, 2, { draw_as_shadow = true }, leg_joint_graphics_definitions),
+    joint_shadow = create_leg_sprite_layer_definition(1, 2, { draw_as_shadow = true }, leg_joint_graphics_definitions),
 
-    joint_turn_offset = spidertron_leg_joint_rotation_offsets[leg_index]
+    joint_turn_offset = spidertron_leg_joint_rotation_offsets[1]
   }
 end
 
@@ -587,9 +587,7 @@ return
            create_spidertron_leg_graphics_set(3),
            create_spidertron_leg_graphics_set(4),
            create_spidertron_leg_graphics_set(5),
-           create_spidertron_leg_graphics_set(6),
-           create_spidertron_leg_graphics_set(7),
-           create_spidertron_leg_graphics_set(8) },
+           create_spidertron_leg_graphics_set(6) },
 
   torso = spidertron_torso_graphics_set
 }

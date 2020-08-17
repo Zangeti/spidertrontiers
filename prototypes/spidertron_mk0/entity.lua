@@ -251,7 +251,5 @@ data:extend{
 	make_spidertron_mk0_leg(4),
 	make_spidertron_mk0_leg(5),
 	make_spidertron_mk0_leg(6),
-	make_spidertron_mk0_leg(7),
-	make_spidertron_mk0_leg(8),
 }
 

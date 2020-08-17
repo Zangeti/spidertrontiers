@@ -99,58 +99,72 @@ local spider_tron_mk3 = {
       	legs = {
 	        { -- 1
 	          	leg = "spidertron-mk3-leg-1",
-	          	mount_position = util.by_pixel(15, -22),--{0.5, -0.75},
-	          	ground_position = {2.25*1.5, -2.5*1.5},
+	          	mount_position = util.by_pixel(13, -22.5),--{0.5, -0.75},
+	          	ground_position = {2.26*1.5, -2.26*1.5},
 	          	blocking_legs = {2},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
 	        },
 	        { -- 2
 	          	leg = "spidertron-mk3-leg-2",
-	          	mount_position = util.by_pixel(23, -10),--{0.75, -0.25},
-	          	ground_position = {3*1.5, -1*1.5},
+	          	mount_position = util.by_pixel(22.5, -13),--{0.75, -0.25},
+	          	ground_position = {2.96*1.5, -1.23*1.5},
 	          	blocking_legs = {1, 3},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
 	        },
-	        { -- 3
+	       	{ -- 3
 	          	leg = "spidertron-mk3-leg-3",
-	          	mount_position = util.by_pixel(25, 4),--{0.75, 0.25},
-	          	ground_position = {3*1.5, 1*1.5},
+	          	mount_position = util.by_pixel(26, 0),--{0.75, 0.25},
+	          	ground_position = {3.2*1.5, 0*1.5},
 	          	blocking_legs = {2, 4},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
 	        },
 	        { -- 4
 	          	leg = "spidertron-mk3-leg-4",
-	          	mount_position = util.by_pixel(15, 17),--{0.5, 0.75},
-	          	ground_position = {2.25*1.5, 2.5*1.5},
-	          	blocking_legs = {3},
+	          	mount_position = util.by_pixel(22.5, 13),--{0.75, 0.25},
+	          	ground_position = {2.96*1.5, 1.23*1.5},
+	          	blocking_legs = {3, 5},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
 	        },
 	        { -- 5
 	          	leg = "spidertron-mk3-leg-5",
-	          	mount_position = util.by_pixel(-15, -22),--{-0.5, -0.75},
-	          	ground_position = {-2.25*1.5, -2.5*1.5},
-	          	blocking_legs = {6, 1},
+	          	mount_position = util.by_pixel(13, 22.5),--{0.5, 0.75},
+	          	ground_position = {2.26*1.5, 2.26*1.5},
+	          	blocking_legs = {4},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
 	        },
 	        { -- 6
 	          	leg = "spidertron-mk3-leg-6",
-	          	mount_position = util.by_pixel(-23, -10),--{-0.75, -0.25},
-	          	ground_position = {-3*1.5, -1*1.5},
-	          	blocking_legs = {5, 7},
+	          	mount_position = util.by_pixel(-13, -22.5),--{-0.5, -0.75},
+	          	ground_position = {-2.26*1.5, -2.26*1.5},
+	          	blocking_legs = {7},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
 	        },
 	        { -- 7
 	          	leg = "spidertron-mk3-leg-7",
-	          	mount_position = util.by_pixel(-25, 4),--{-0.75, 0.25},
-	          	ground_position = {-3*1.5, 1*1.5},
+	          	mount_position = util.by_pixel(-22.5, -13),--{-0.75, -0.25},
+	          	ground_position = {-2.96*1.5, -1.23*1.5},
 	          	blocking_legs = {6, 8},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
 	        },
 	        { -- 8
 	          	leg = "spidertron-mk3-leg-8",
-	          	mount_position = util.by_pixel(-15, 17),--{-0.5, 0.75},
-	          	ground_position = {-2.25*1.5, 2.5*1.5},
-	          	blocking_legs = {7},
+	          	mount_position = util.by_pixel(-26, 0),--{-0.75, 0.25},
+	          	ground_position = {-3.2*1.5, 0*1.5},
+	          	blocking_legs = {7, 9},
+	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	        },
+	        { -- 9
+	          	leg = "spidertron-mk3-leg-9",
+	          	mount_position = util.by_pixel(-22.5, 13),--{-0.5, 0.75},
+	          	ground_position = {-2.96*1.5, 1.23*1.5},
+	          	blocking_legs = {8, 10},
+	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	        },
+	       	{ -- 10
+	          	leg = "spidertron-mk3-leg-10",
+	          	mount_position = util.by_pixel(-13, 22.5),--{-0.5, 0.75},
+	          	ground_position = {-2.26*1.5, 2.26*1.5},
+	          	blocking_legs = {9},
 	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
 	        }
       	},
@@ -267,5 +281,7 @@ data:extend{
 	make_spidertron_mk3_leg(6),
 	make_spidertron_mk3_leg(7),
 	make_spidertron_mk3_leg(8),
+	make_spidertron_mk3_leg(9),
+	make_spidertron_mk3_leg(10),
 }
 
