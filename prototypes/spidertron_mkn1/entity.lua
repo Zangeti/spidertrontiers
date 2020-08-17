@@ -6,7 +6,7 @@ local spider_tron_mk_1 = {
     name = "spidertron_mkn1",
     collision_box = {{-1, -1}, {1, 1}},
     selection_box = {{-1, -1}, {1, 1}},
-    icon = "__spidertrontiers__/graphics/icons/spidertron_mk3.png",
+    icon = "__spidertrontiers__/graphics/icons/spidertron_mkn1.png",
     mined_sound = {filename = "__core__/sound/deconstruct-large.ogg",volume = 0.8},
     open_sound = { filename = "__base__/sound/spidertron/spidertron-door-open.ogg", volume= 0.35 },
     close_sound = { filename = "__base__/sound/spidertron/spidertron-door-close.ogg", volume = 0.4 },
@@ -108,7 +108,7 @@ local spider_tron_mk_1 = {
       }
     },
     movement_energy_consumption = "450kW",
-    automatic_weapon_cycling = true,
+    automatic_weapon_cycling = false,
     chain_shooting_cooldown_modifier = 0.5,
     spider_engine = {
       	legs = {
