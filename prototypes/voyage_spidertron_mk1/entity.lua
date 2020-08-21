@@ -43,7 +43,7 @@ local voyage_spidertron_mk1 = {
       	},
       	{
 	        type = "physical",
-	        decrease = 15,
+	        decrease = 0,
 	        percent = 60
       	},
       	{

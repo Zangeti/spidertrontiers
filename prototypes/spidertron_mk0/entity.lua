@@ -43,7 +43,7 @@ local spidertron_mk0 = {
       	},
       	{
 	        type = "physical",
-	        decrease = 15,
+	        decrease = 10,
 	        percent = 60
       	},
       	{

@@ -43,7 +43,7 @@ local scout_spidertron_mk2 = {
       	},
       	{
 	        type = "physical",
-	        decrease = 15,
+	        decrease = 0,
 	        percent = 60
       	},
       	{
