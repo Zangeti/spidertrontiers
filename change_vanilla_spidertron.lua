@@ -55,7 +55,7 @@ data.raw["item-with-entity-data"]["spidertron"] = {
     icon = "__base__/graphics/icons/spidertron.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "transport",
-    order = "b[personal-transport]-c[spidertron]-b[spider]-c[Mk1]",
+    order = "b[personal-transport]-c[spidertron]-b[spider]-l[spidertron-mk1]",
     place_result="spidertron",
     stack_size = 1,
 }

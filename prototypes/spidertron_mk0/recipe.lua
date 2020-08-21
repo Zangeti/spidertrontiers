@@ -1,4 +1,4 @@
-local spider_tron_mk0 = {
+local spidertron_mk0 = {
     type = "recipe",
     name = "spidertron_mk0",
     normal = {
@@ -20,5 +20,5 @@ local spider_tron_mk0 = {
 }
 
 data:extend{
-    spider_tron_mk0,
+    spidertron_mk0,
 }

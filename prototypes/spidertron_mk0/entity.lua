@@ -1,7 +1,7 @@
 local sounds = require("__base__.prototypes.entity.demo-sounds")
-local spidertron_mk0_animations = require("__spidertrontiers__.spidertron-animations_mk0")
+local spidertron_mk0_animations = require("__spidertrontiers__.spidertron_animations.spidertron_mk0-animations")
 
-local spider_tron_mk0 = {
+local spidertron_mk0 = {
     type = "spider-vehicle",
     name = "spidertron_mk0",
     collision_box = {{-1, -1}, {1, 1}},
@@ -145,7 +145,7 @@ local spider_tron_mk0 = {
 }
 
 
-local spider_tron_mk0_remnants = {
+local spidertron_mk0_remnants = {
     type = "corpse",
     name = "spidertron-mk0-remnants",
     icon = "__spidertrontiers__/graphics/icons/spidertron_mkn1.png",
@@ -221,7 +221,7 @@ function make_spidertron_mk0_leg(number, base_sprite, ending_sprite)
 	    localised_name = {"entity-name.spidertron-leg"},
 	    collision_box = {{-0.01, -0.01}, {0.01, 0.01}},
 	    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-	    icon = "__spidertrontiers__/graphics/icons/spidertron_mkn1.png",
+	    icon = "__spidertrontiers__/graphics/icons/spidertron_mk0.png",
 	    icon_size = 64, icon_mipmaps = 4,
 	    walking_sound_volume_modifier = 0.4, --modified
 	    working_sound = 
@@ -243,8 +243,8 @@ end
 
 
 data:extend{
-	spider_tron_mk0,
-	spider_tron_mk0_remnants,
+	spidertron_mk0,
+	spidertron_mk0_remnants,
 	make_spidertron_mk0_leg(1),
 	make_spidertron_mk0_leg(2),
 	make_spidertron_mk0_leg(3),

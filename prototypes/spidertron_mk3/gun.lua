@@ -4,7 +4,7 @@ function spidertron_mk3_rocket_launcher(number)
 	return {
 	    type = "gun",
 	    name = "spidertron-mk3-rocket-launcher-" .. number,
-	    localised_name = {"item-name.spidertron-rocket-launcher"},
+	    localised_name = "Spidertron Mk3 Rocket Launcher",
 	    icon = "__base__/graphics/icons/rocket-launcher.png",
 	    icon_size = 64, icon_mipmaps = 4,
 	    subgroup = "gun",

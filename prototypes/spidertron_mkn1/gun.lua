@@ -3,7 +3,7 @@ local sounds = require("__base__.prototypes.entity.demo-sounds")
 local spidertron_mkn1_rocket_launcher_1 = {
 	type = "gun",
 	name = "spidertron-mkn1-rocket-launcher-1",
-	localised_name = {"item-name.spidertron-rocket-launcher"},
+	localised_name = "Spidertron Mk-1 Rocket Launcher",
 	icon = "__base__/graphics/icons/rocket-launcher.png",
 	icon_size = 64, icon_mipmaps = 4,
 	subgroup = "gun",
@@ -30,6 +30,7 @@ local spidertron_mkn1_rocket_launcher_1 = {
 local spidertron_mkn1_machine_gun_1 = {
     type = "gun",
     name = "spidertron-mkn1-machine-gun-1",
+    localised_name = "Spidertron Mk-1 Machine Gun",
     icon = "__base__/graphics/icons/submachine-gun.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"hidden"},

@@ -1,7 +1,7 @@
 local sounds = require("__base__.prototypes.entity.demo-sounds")
-local spidertron_mk_1_animations = require("__spidertrontiers__.spidertron-animations_mkn1")
+local spidertron_mk_1_animations = require("__spidertrontiers__.spidertron_animations.spidertron_mkn1-animations")
 
-local spider_tron_mk_1 = {
+local spidertron_mk_1 = {
     type = "spider-vehicle",
     name = "spidertron_mkn1",
     collision_box = {{-1, -1}, {1, 1}},
@@ -34,7 +34,7 @@ local spider_tron_mk_1 = {
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
     collision_mask = {},
     minable = {mining_time = 1, result = "spidertron_mkn1"},
-    max_health = 1500, --modified
+    max_health = 1200, --modified
     resistances = {
       	{
         	type = "fire",
@@ -86,7 +86,7 @@ local spider_tron_mk_1 = {
     equipment_grid = "spidertron-mk-1-equipment-grid",
     height = 1,
     torso_rotation_speed = 0.005,
-    chunk_exploration_radius = 1, --modified
+    chunk_exploration_radius = 2, --modified
     selection_priority = 51,
     graphics_set = spidertron_mk_1_animations.torso,
     energy_source = {
@@ -107,12 +107,12 @@ local spider_tron_mk_1 = {
         }
       }
     },
-    movement_energy_consumption = "450kW",
+    movement_energy_consumption = "250kW",
     automatic_weapon_cycling = false,
     chain_shooting_cooldown_modifier = 0.5,
     spider_engine = {
       	legs = {
-			{ -- 1
+			    { -- 1
 	          	leg = "spidertron-mk-1-leg-1",
 	          	mount_position = util.by_pixel(12.9, 17.8),--{0.5, -0.75},
 	          	ground_position = {1.6*1.8, 2.3*0.9},
@@ -153,7 +153,7 @@ local spider_tron_mk_1 = {
 }
 
 
-local spider_tron_mk_1_remnants = {
+local spidertron_mk_1_remnants = {
     type = "corpse",
     name = "spidertron-mk-1-remnants",
     icon = "__spidertrontiers__/graphics/icons/spidertron_mkn1.png",
@@ -251,8 +251,8 @@ end
 
 
 data:extend{
-  	spider_tron_mk_1,
-  	spider_tron_mk_1_remnants,
+  	spidertron_mk_1,
+  	spidertron_mk_1_remnants,
   	make_spidertron_mk_1_leg(1),
   	make_spidertron_mk_1_leg(2),
   	make_spidertron_mk_1_leg(3),

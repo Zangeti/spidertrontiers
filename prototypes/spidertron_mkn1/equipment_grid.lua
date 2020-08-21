@@ -1,4 +1,4 @@
-local mk_1EquipmentGrid = {
+local spidertron_mk_1_equipment_grid = {
     type = "equipment-grid",
     name = "spidertron-mk-1-equipment-grid",
     width = 6,
@@ -7,5 +7,5 @@ local mk_1EquipmentGrid = {
 }
 
 data:extend{
-	mk_1EquipmentGrid,
+	spidertron_mk_1_equipment_grid,
 }

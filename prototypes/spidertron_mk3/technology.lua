@@ -1,4 +1,4 @@
-local spider_tron_mk3 = {
+local spidertron_mk3 = {
     type = "technology",
     name = "spidertron_mk3",
     icon_size = 128,
@@ -27,5 +27,5 @@ local spider_tron_mk3 = {
 }
 
 data:extend{
-    spider_tron_mk3,
+    spidertron_mk3,
 }

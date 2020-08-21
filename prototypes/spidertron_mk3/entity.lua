@@ -1,7 +1,7 @@
 local sounds = require("__base__.prototypes.entity.demo-sounds")
-local spidertron_mk3_animations = require("__spidertrontiers__.spidertron-animations_mk3")
+local spidertron_mk3_animations = require("__spidertrontiers__.spidertron_animations.spidertron_mk3-animations")
 
-local spider_tron_mk3 = {
+local spidertron_mk3 = {
     type = "spider-vehicle",
     name = "spidertron_mk3",
     collision_box = {{-1, -1}, {1, 1}},
@@ -173,7 +173,7 @@ local spider_tron_mk3 = {
 }
 
 
-local spider_tron_mk3_remnants = {
+local spidertron_mk3_remnants = {
     type = "corpse",
     name = "spidertron-mk3-remnants",
     icon = "__spidertrontiers__/graphics/icons/spidertron_mk3.png",
@@ -271,8 +271,8 @@ end
 
 
 data:extend{
-	spider_tron_mk3,
-	spider_tron_mk3_remnants,
+	spidertron_mk3,
+	spidertron_mk3_remnants,
 	make_spidertron_mk3_leg(1),
 	make_spidertron_mk3_leg(2),
 	make_spidertron_mk3_leg(3),

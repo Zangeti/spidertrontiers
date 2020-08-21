@@ -1,4 +1,4 @@
-local spider_tron_mk2 = {
+local spidertron_mk2 = {
     type = "item-with-entity-data",
     name = "spidertron_mk2",
     icon = "__spidertrontiers__/graphics/icons/spidertron_mk2.png",
@@ -6,9 +6,9 @@ local spider_tron_mk2 = {
     subgroup = "transport",
     place_result="spidertron_mk2",
     stack_size = 1,
-    order = "b[personal-transport]-c[spidertron]-b[spider]-d[Mk2]",
+    order = "b[personal-transport]-c[spidertron]-b[spider]-m[spidertron-mk2]",
 }
 
 data:extend{
-	spider_tron_mk2,
+	spidertron_mk2,
 }

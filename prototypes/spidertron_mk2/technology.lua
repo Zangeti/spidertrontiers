@@ -1,4 +1,4 @@
-local spider_tron_mk2 = {
+local spidertron_mk2 = {
     type = "technology",
     name = "spidertron_mk2",
     icon_size = 128,
@@ -9,7 +9,7 @@ local spider_tron_mk2 = {
             recipe = "spidertron_mk2"
         },
     },
-    prerequisites = {"spidertron"},
+    prerequisites = {"spidertron", "assault_spidertron_mk2", "bulwark_spidertron_mk2", "scout_spidertron_mk2", "voyage_spidertron_mk2"},
     unit = {
         ingredients =
         {
@@ -27,5 +27,5 @@ local spider_tron_mk2 = {
 }
 
 data:extend{
-    spider_tron_mk2,
+    spidertron_mk2,
 }
