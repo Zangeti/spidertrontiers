@@ -1,5 +1,6 @@
 local sounds = require("__base__.prototypes.entity.demo-sounds")
 local spidertron_mk2_animations = require("__spidertrontiers__.spidertron_animations.spidertron_mk2-animations")
+local ground_triggers = require("__spidertrontiers__.prototypes.ground_triggers")
 
 local spidertron_mk2 = {
     type = "spider-vehicle",
@@ -102,56 +103,56 @@ local spidertron_mk2 = {
 	          	mount_position = util.by_pixel(15, -22),--{0.5, -0.75},
 	          	ground_position = {2.25, -2.5},
 	          	blocking_legs = {2},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
 	        },
 	        { -- 2
 	          	leg = "spidertron-mk2-leg-2",
 	          	mount_position = util.by_pixel(23, -10),--{0.75, -0.25},
 	          	ground_position = {3, -1},
 	          	blocking_legs = {1, 3},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
 	        },
 	        { -- 3
 	          	leg = "spidertron-mk2-leg-3",
 	          	mount_position = util.by_pixel(25, 4),--{0.75, 0.25},
 	          	ground_position = {3, 1},
 	          	blocking_legs = {2, 4},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
 	        },
 	        { -- 4
 	          	leg = "spidertron-mk2-leg-4",
 	          	mount_position = util.by_pixel(15, 17),--{0.5, 0.75},
 	          	ground_position = {2.25, 2.5},
 	          	blocking_legs = {3},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
 	        },
 	        { -- 5
 	          	leg = "spidertron-mk2-leg-5",
 	          	mount_position = util.by_pixel(-15, -22),--{-0.5, -0.75},
 	          	ground_position = {-2.25, -2.5},
 	          	blocking_legs = {6, 1},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
 	        },
 	        { -- 6
 	          	leg = "spidertron-mk2-leg-6",
 	          	mount_position = util.by_pixel(-23, -10),--{-0.75, -0.25},
 	          	ground_position = {-3, -1},
 	          	blocking_legs = {5, 7},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
 	        },
 	        { -- 7
 	          	leg = "spidertron-mk2-leg-7",
 	          	mount_position = util.by_pixel(-25, 4),--{-0.75, 0.25},
 	          	ground_position = {-3, 1},
 	          	blocking_legs = {6, 8},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
 	        },
 	        { -- 8
 	          	leg = "spidertron-mk2-leg-8",
 	          	mount_position = util.by_pixel(-15, 17),--{-0.5, 0.75},
 	          	ground_position = {-2.25, 2.5},
 	          	blocking_legs = {7},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
 	        }
       	},
       	military_target = "spidertron-military-target",
@@ -229,7 +230,7 @@ local spidertron_mk2_remnants = {
 
 
 function make_spidertron_mk2_leg(number, base_sprite, ending_sprite)
-  	return {
+  	local leg = {
 	    type = "spider-leg",
 	    name = "spidertron-mk2-leg-" .. number,
 	    localised_name = {"entity-name.spidertron-leg"},
@@ -252,8 +253,18 @@ function make_spidertron_mk2_leg(number, base_sprite, ending_sprite)
 	    selectable_in_game = false,
 	    graphics_set = spidertron_mk2_animations.legs[number],
 	}
+	if (settings.startup["show-spidertron-legs"].value == false) then
+		leg.graphics_set = {}
+		leg.walking_sound_volume_modifier = 0
+	end
+	return leg
 end
 
+if (settings.startup["show-spidertron-legs"].value == false) then
+	for index,leg in pairs(spidertron_mk2.spider_engine.legs) do
+		spidertron_mk2.spider_engine.legs[index].leg_hit_the_ground_trigger = nil
+	end
+end
 
 data:extend{
 	spidertron_mk2,

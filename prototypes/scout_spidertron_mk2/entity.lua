@@ -1,5 +1,6 @@
 local sounds = require("__base__.prototypes.entity.demo-sounds")
 local scout_spidertron_mk2_animations = require("__spidertrontiers__.spidertron_animations.scout_spidertron_mk2-animations")
+local ground_triggers = require("__spidertrontiers__.prototypes.ground_triggers")
 
 local scout_spidertron_mk2 = {
     type = "spider-vehicle",
@@ -102,28 +103,28 @@ local scout_spidertron_mk2 = {
 	          	mount_position = util.by_pixel(21.7, -12.5),--{0.5, -0.75},
 	          	ground_position = {2.6, -1.5},
 	          	blocking_legs = {2},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
 	        },
 	        { -- 2
 	          	leg = "scout-spidertron-mk2-leg-2",
 	          	mount_position = util.by_pixel(21.7, 12.5),--{0.75, -0.25},
 	          	ground_position = {2.6, 1.5},
 	          	blocking_legs = {1},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
 	        },
 	        { -- 3
 	          	leg = "scout-spidertron-mk2-leg-3",
 	          	mount_position = util.by_pixel(-21.7, -12.5),--{0.75, 0.25},
 	          	ground_position = {-2.6, -1.5},
 	          	blocking_legs = {4},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
 	        },
 	        { -- 4
 	          	leg = "scout-spidertron-mk2-leg-4",
 	          	mount_position = util.by_pixel(-21.7, 12.5),--{0.5, 0.75},
 	          	ground_position = {-2.6, 1.5},
 	          	blocking_legs = {3},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
 	        }
       	},
       	military_target = "spidertron-military-target",
@@ -201,7 +202,7 @@ local scout_spidertron_mk2_remnants = {
 
 
 function make_scout_spidertron_mk2_leg(number, base_sprite, ending_sprite)
-  	return {
+  	local leg = {
 	    type = "spider-leg",
 	    name = "scout-spidertron-mk2-leg-" .. number,
 	    localised_name = {"entity-name.spidertron-leg"},
@@ -224,8 +225,18 @@ function make_scout_spidertron_mk2_leg(number, base_sprite, ending_sprite)
 	    selectable_in_game = false,
 	    graphics_set = scout_spidertron_mk2_animations.legs[number],
 	}
+	if (settings.startup["show-spidertron-legs"].value == false) then
+		leg.graphics_set = {}
+		leg.walking_sound_volume_modifier = 0
+	end
+	return leg
 end
 
+if (settings.startup["show-spidertron-legs"].value == false) then
+	for index,leg in pairs(scout_spidertron_mk2.spider_engine.legs) do
+		scout_spidertron_mk2.spider_engine.legs[index].leg_hit_the_ground_trigger = nil
+	end
+end
 
 data:extend{
 	scout_spidertron_mk2,

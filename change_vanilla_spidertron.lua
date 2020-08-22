@@ -59,3 +59,9 @@ data.raw["item-with-entity-data"]["spidertron"] = {
     place_result="spidertron",
     stack_size = 1,
 }
+
+for index,leg in pairs(data.raw["spider-vehicle"]["spidertron"].spider_engine.legs) do
+    data.raw["spider-vehicle"]["spidertron"].spider_engine.legs[index].leg_hit_the_ground_trigger = nil
+    data.raw["spider-leg"]["spidertron-leg-"..index].graphics_set = {}
+    data.raw["spider-leg"]["spidertron-leg-"..index].walking_sound_volume_modifier = 0
+end

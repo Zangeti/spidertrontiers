@@ -1,5 +1,6 @@
 local sounds = require("__base__.prototypes.entity.demo-sounds")
 local scout_spidertron_mk1_animations = require("__spidertrontiers__.spidertron_animations.scout_spidertron_mk1-animations")
+local ground_triggers = require("__spidertrontiers__.prototypes.ground_triggers")
 
 local scout_spidertron_mk1 = {
     type = "spider-vehicle",
@@ -102,21 +103,21 @@ local scout_spidertron_mk1 = {
 	          	mount_position = util.by_pixel(19.9, 11.5),--{0.5, -0.75},
 	          	ground_position = {2.59*1.2*1.2, 1.5*0.9*1.2},
 	          	blocking_legs = {2, 3},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
         	},
         	{ -- 2
 	          	leg = "scout-spidertron-mk1-leg-2",
 	          	mount_position = util.by_pixel(0, -23),--{0.75, -0.25},
 	          	ground_position = {0*1.2, -3*1.2},
 	          	blocking_legs = {1, 3},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
        		},
         	{ -- 3
 	          	leg = "scout-spidertron-mk1-leg-3",
 	          	mount_position = util.by_pixel(-19.9, 11.5),--{0.75, 0.25},
 	          	ground_position = {-2.59*1.2*1.2, 1.5*0.9*1.2},
 	          	blocking_legs = {1, 2},
-	          	leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+	          	leg_hit_the_ground_trigger = ground_triggers.get_leg_hit_the_ground_trigger_vanilla()
         	}
       	},
       	military_target = "spidertron-military-target",
@@ -194,7 +195,7 @@ local scout_spidertron_mk1_remnants = {
 
 
 function make_scout_spidertron_mk1_leg(number, base_sprite, ending_sprite)
-  	return {
+  	local leg = {
 	    type = "spider-leg",
 	    name = "scout-spidertron-mk1-leg-" .. number,
 	    localised_name = {"entity-name.spidertron-leg"},
@@ -217,8 +218,18 @@ function make_scout_spidertron_mk1_leg(number, base_sprite, ending_sprite)
 	    selectable_in_game = false,
 	    graphics_set = scout_spidertron_mk1_animations.legs[number],
 	}
+	if (settings.startup["show-spidertron-legs"].value == false) then
+		leg.graphics_set = {}
+		leg.walking_sound_volume_modifier = 0
+	end
+	return leg
 end
 
+if (settings.startup["show-spidertron-legs"].value == false) then
+	for index,leg in pairs(scout_spidertron_mk1.spider_engine.legs) do
+		scout_spidertron_mk1.spider_engine.legs[index].leg_hit_the_ground_trigger = nil
+	end
+end
 
 data:extend{
 	scout_spidertron_mk1,
