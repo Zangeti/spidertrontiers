@@ -1,11 +1,11 @@
 {
     "name": "spidertrontiers",
-    "version": "0.2.4",
+    "version": "0.2.5",
     "title": "Spidertron Tiers",
     "author": "Zangeti",
     "contact": "",
     "homepage": "https://discord.gg/kC53xn2",
     "factorio_version": "1.0",
-    "dependencies": ["base >= 1.0"],
+    "dependencies": ["base >= 1.0", "? bobvehicleequipment >= 1.0.0"],
     "description": "Adds 13 new unique Spidertrons! Wether high firepower, early game, speed, inventory size or fog war reveal, there is something for everyone."
 }
