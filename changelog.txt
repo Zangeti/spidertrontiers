@@ -1,48 +1,48 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.8
-Date: 24. 08. 2020
+Date: 24.08.2020
   Bugfixes:
     - Fixed Changelog
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.7
-Date: 24. 08. 2020
+Date: 24.08.2020
   Additions:
     - Added Changelog
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.6
-Date: 24. 08. 2020
+Date: 24.08.2020
   Changes:
     - Minor Balance Changes
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.5
-Date: 24. 08. 2020
+Date: 24.08.2020
   Bugfixes:
     - Fixed Bug with Vanilla Spidertrons not having rendered legs
   Additions:
     - Made Compatible with Bobingabout's Bobs Vehicle Equipment Mod
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.4
-Date: 23. 08. 2020
+Date: 23.08.2020
   Changes:
     - Spidertron Mk3 now requires Space Science to Research
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.3
-Date: 23. 08. 2020
+Date: 23.08.2020
   Additions:
-     - Added a startup setting that disables the rendering of spidertron legs for those who find them unsettling
+    - Added a startup setting that disables the rendering of spidertron legs for those who find them unsettling
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.2
-Date: 21. 08. 2020
+Date: 21.08.2020
   Changes:
     - Minor Balancing Changes
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.1
-Date: 21. 08. 2020
+Date: 21.08.2020
   Changes:
     - Minor Balancing Changes
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.0
-Date: 21. 08. 2020
+Date: 21.08.2020
   Additions:
     - Prototype Spidertron
     - Assault Spidertron Mk1
@@ -58,29 +58,29 @@ Date: 21. 08. 2020
     - Minor Balancing Changes
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.9
-Date: 17. 08. 2020
+Date: 17.08.2020
   Bugfixes:
     - Fixes Mk-1 Spidertron Automatic Weapon Cycling
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.8
-Date: 17. 08. 2020
+Date: 17.08.2020
   Changes:
     - Spidertron Mk3 is now decapedal
     - Reduced blur on the Spidertron Mk2 Texture
     - Minor Balancing Changes
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7
-Date: 17. 08. 2020
+Date: 17.08.2020
   Changes:
     - Minor Balancing Changes
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.6
-Date: 17. 08. 2020
-  Changes: 
+Date: 17.08.2020
+  Changes:
     - Improved Spidertron Legs
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.5
-Date: 17. 08. 2020
+Date: 17.08.2020
   Changes:
     - Adjusted graphics to fit Spidertron leg Changes
 ---------------------------------------------------------------------------------------------------
@@ -91,22 +91,22 @@ Date: 16. 08. 2020
     - Spidertrons have different movement speeds
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.3
-Date: 17. 08. 2020
+Date: 17.08.2020
   Changes:
     - Spidertrons have different ranges
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
-Date: 16. 08. 2020
+Date: 16.08.2020
   Changes:
     - Fixed Rocket Parts in Recipe of Spidertron Mk3
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1
-Date: 16. 08. 2020
+Date: 16.08.2020
   Changes:
     - Minor Balancing Changes
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
-Date: 16. 08. 2020
+Date: 16.08.2020
   Additions:
     - Spidertron Mk-1
     - Spidertron Mk0
@@ -114,8 +114,7 @@ Date: 16. 08. 2020
     - Research Tree
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
-Date: 15. 08. 2020
+Date: 15.08.2020
   Additions:
     - Spidertron Mk2
     - Spidertron Mk3
----------------------------------------------------------------------------------------------------
