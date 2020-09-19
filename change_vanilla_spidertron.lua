@@ -1,22 +1,24 @@
-data.raw["recipe"]["spidertron"] = {
-    type = "recipe",
-    name = "spidertron",
-    normal = {
-      	enabled = false,
-      	energy_required = 10,
-      	ingredients = {
-      		{"spidertron_mk0", 1},
-	        {"exoskeleton-equipment", 4},
-	        {"fusion-reactor-equipment", 2},
-	        {"rocket-launcher", 2},
-	        {"rocket-control-unit", 16},
-	        {"low-density-structure", 150},
-	        {"radar", 2},
-	        {"effectivity-module-3", 2},
-      	},
-     	result = "spidertron"
+if (settings.startup["stack-spidertron-recipes"].value == true) then
+    data.raw["recipe"]["spidertron"] = {
+        type = "recipe",
+        name = "spidertron",
+        normal = {
+            enabled = false,
+            energy_required = 10,
+            ingredients = {
+              {"spidertron_mk0", 1},
+              {"exoskeleton-equipment", 4},
+              {"fusion-reactor-equipment", 2},
+              {"rocket-launcher", 2},
+              {"rocket-control-unit", 16},
+              {"low-density-structure", 150},
+              {"radar", 2},
+              {"effectivity-module-3", 2},
+            },
+          result = "spidertron"
+        }
     }
-}
+end
 
 data.raw["technology"]["spidertron"] = {
     type = "technology",

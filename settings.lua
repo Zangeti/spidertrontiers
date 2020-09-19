@@ -4,5 +4,12 @@ data:extend{
 	    name = "show-spidertron-legs",
 	    setting_type = "startup",
 	    default_value = true,
-    }
+    },
+
+    {
+	    type = "bool-setting",
+	    name = "stack-spidertron-recipes",
+	    setting_type = "startup",
+	    default_value = true,
+    },
 }

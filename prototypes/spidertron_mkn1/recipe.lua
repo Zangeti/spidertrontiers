@@ -7,12 +7,12 @@ local spidertron_mk_1 = {
         ingredients = {
             {"battery", 20},
             {"electronic-circuit", 150},
-            {"iron-gear-wheel", 180},
+            {"iron-gear-wheel", 220},
             {"submachine-gun", 1},
-            {"steel-plate", 120},
+            {"steel-plate", 150},
             {"radar", 2},
-            {"iron-stick",16},
-            {"copper-cable", 50},
+            {"iron-stick", 24},
+            {"copper-cable", 65},
         },
         result = "spidertron_mkn1"
     },

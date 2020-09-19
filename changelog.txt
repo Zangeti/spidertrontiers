@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.11
+Date: 19.09.2020
+  Additions:
+    - Startup option that removes the 'stacking' recipes of the Spidertrons! If the setting is enabled, you don't have to craft every spidertron lower than Mk3 to craft Mk3
+  Changes:
+    - Minor Balancing Changes
+---------------------------------------------------------------------------------------------------
 Version: 0.2.10
 Date: 26.08.2020
   Changes:
