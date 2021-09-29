@@ -1,4 +1,4 @@
-local sounds = require("__base__.prototypes.entity.demo-sounds")
+local sounds = require("__base__.prototypes.entity.sounds")
 
 local bulwark_spidertron_mk2_rocket_launcher_1 = {
 	type = "gun",
@@ -12,7 +12,7 @@ local bulwark_spidertron_mk2_rocket_launcher_1 = {
 	attack_parameters = {
 	    type = "projectile",
 	    ammo_category = "rocket",
-	    cooldown = 360,
+	    cooldown = 300,
 	    range = 36,
 	    projectile_creation_distance = -0.5,
 	    projectile_center = {0, 0.3},
@@ -39,7 +39,7 @@ local bulwark_spidertron_mk2_machine_gun_1 = {
     attack_parameters = {
       	type = "projectile",
       	ammo_category = "bullet",
-      	cooldown = 18,
+      	cooldown = 15,
       	movement_slow_down_factor = 0.7,
      	shell_particle = {
 	        name = "shell-particle",

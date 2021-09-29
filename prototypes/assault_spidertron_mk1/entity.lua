@@ -1,4 +1,4 @@
-local sounds = require("__base__.prototypes.entity.demo-sounds")
+local sounds = require("__base__.prototypes.entity.sounds")
 local assault_spidertron_mk1_animations = require("__spidertrontiers__.spidertron_animations.assault_spidertron_mk1-animations")
 local ground_triggers = require("__spidertrontiers__.prototypes.ground_triggers")
 
@@ -13,6 +13,7 @@ local assault_spidertron_mk1 = {
     close_sound = { filename = "__base__/sound/spidertron/spidertron-door-close.ogg", volume = 0.4 },
     sound_minimum_speed = 0.1,
     sound_scaling_ratio = 0.6,
+    trash_inventory_size = 10,
     working_sound = {
       	sound = {
 	        filename = "__base__/sound/spidertron/spidertron-vox.ogg",
@@ -85,6 +86,7 @@ local assault_spidertron_mk1 = {
     guns = { "assault-spidertron-mk1-shotgun-1", "assault-spidertron-mk1-shotgun-2" },
     inventory_size = 15,
     equipment_grid = "assault-spidertron-mk1-equipment-grid",
+    
     height = 2.5,
     torso_rotation_speed = 0.005,
     chunk_exploration_radius = 1, --modified
@@ -95,7 +97,7 @@ local assault_spidertron_mk1 = {
     },
     movement_energy_consumption = "250kW",
     automatic_weapon_cycling = true,
-    chain_shooting_cooldown_modifier = 1.5, --modified
+    chain_shooting_cooldown_modifier = 1.8, --modified
     spider_engine = {
       	legs = {
 	        { -- 1
@@ -255,11 +257,11 @@ end
 data:extend{
 	assault_spidertron_mk1,
 	assault_spidertron_mk1_remnants,
-	make_assault_spidertron_mk1_leg(1),
-	make_assault_spidertron_mk1_leg(2),
-	make_assault_spidertron_mk1_leg(3),
-	make_assault_spidertron_mk1_leg(4),
-	make_assault_spidertron_mk1_leg(5),
-	make_assault_spidertron_mk1_leg(6),
+	utils.make_spidertron_leg("assault-spidertron-mk1", 1, 0.06, 0.03, 1, 1, assault_spidertron_mk1_animations),
+	utils.make_spidertron_leg("assault-spidertron-mk1", 1, 0.06, 0.03, 1, 2, assault_spidertron_mk1_animations),
+	utils.make_spidertron_leg("assault-spidertron-mk1", 1, 0.06, 0.03, 1, 3, assault_spidertron_mk1_animations),
+	utils.make_spidertron_leg("assault-spidertron-mk1", 1, 0.06, 0.03, 1, 4, assault_spidertron_mk1_animations),
+	utils.make_spidertron_leg("assault-spidertron-mk1", 1, 0.06, 0.03, 1, 5, assault_spidertron_mk1_animations),
+	utils.make_spidertron_leg("assault-spidertron-mk1", 1, 0.06, 0.03, 1, 6, assault_spidertron_mk1_animations),
 }
 

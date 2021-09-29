@@ -1,3 +1,4 @@
+
 -- bobvehicleequipment compatibility work
 if not(settings.startup["bobmods-vehicleequipment-enablevehiclegrids"] == nil) then
 	local grid_list = {

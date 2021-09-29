@@ -1,4 +1,4 @@
-local sounds = require("__base__.prototypes.entity.demo-sounds")
+local sounds = require("__base__.prototypes.entity.sounds")
 local spidertron_mk2_animations = require("__spidertrontiers__.spidertron_animations.spidertron_mk2-animations")
 local ground_triggers = require("__spidertrontiers__.prototypes.ground_triggers")
 
@@ -13,6 +13,7 @@ local spidertron_mk2 = {
     close_sound = { filename = "__base__/sound/spidertron/spidertron-door-close.ogg", volume = 0.4 },
     sound_minimum_speed = 0.1,
     sound_scaling_ratio = 0.6,
+    trash_inventory_size = 25,
     working_sound = {
       	sound = {
 	        filename = "__base__/sound/spidertron/spidertron-vox.ogg",
@@ -269,13 +270,13 @@ end
 data:extend{
 	spidertron_mk2,
 	spidertron_mk2_remnants,
-	make_spidertron_mk2_leg(1),
-	make_spidertron_mk2_leg(2),
-	make_spidertron_mk2_leg(3),
-	make_spidertron_mk2_leg(4),
-	make_spidertron_mk2_leg(5),
-	make_spidertron_mk2_leg(6),
-	make_spidertron_mk2_leg(7),
-	make_spidertron_mk2_leg(8),
+	utils.make_spidertron_leg("spidertron-mk2", 1, 0.06, 0.04, 1, 1, spidertron_mk2_animations),
+	utils.make_spidertron_leg("spidertron-mk2", 1, 0.06, 0.04, 1, 2, spidertron_mk2_animations),
+	utils.make_spidertron_leg("spidertron-mk2", 1, 0.06, 0.04, 1, 3, spidertron_mk2_animations),
+	utils.make_spidertron_leg("spidertron-mk2", 1, 0.06, 0.04, 1, 4, spidertron_mk2_animations),
+	utils.make_spidertron_leg("spidertron-mk2", 1, 0.06, 0.04, 1, 5, spidertron_mk2_animations),
+	utils.make_spidertron_leg("spidertron-mk2", 1, 0.06, 0.04, 1, 6, spidertron_mk2_animations),
+	utils.make_spidertron_leg("spidertron-mk2", 1, 0.06, 0.04, 1, 7, spidertron_mk2_animations),
+	utils.make_spidertron_leg("spidertron-mk2", 1, 0.06, 0.04, 1, 8, spidertron_mk2_animations),
 }
 

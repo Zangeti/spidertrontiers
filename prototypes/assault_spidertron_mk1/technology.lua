@@ -9,7 +9,7 @@ local assault_spidertron_mk1 = {
             recipe = "assault_spidertron_mk1"
         },
     },
-    prerequisites = {"prototype_spidertron", "military-science-pack", "turrets"},
+    prerequisites = {"prototype_spidertron", "military-science-pack", "gun-turret"},
     unit = {
         ingredients =
         {

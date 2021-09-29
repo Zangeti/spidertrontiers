@@ -1,4 +1,4 @@
-local sounds = require("__base__.prototypes.entity.demo-sounds")
+local sounds = require("__base__.prototypes.entity.sounds")
 local bulwark_spidertron_mk1_animations = require("__spidertrontiers__.spidertron_animations.bulwark_spidertron_mk1-animations")
 local ground_triggers = require("__spidertrontiers__.prototypes.ground_triggers")
 
@@ -13,6 +13,7 @@ local bulwark_spidertron_mk1 = {
     close_sound = { filename = "__base__/sound/spidertron/spidertron-door-close.ogg", volume = 0.4 },
     sound_minimum_speed = 0.1,
     sound_scaling_ratio = 0.6,
+    trash_inventory_size = 8,
     working_sound = {
       	sound = {
 	        filename = "__base__/sound/spidertron/spidertron-vox.ogg",
@@ -95,7 +96,7 @@ local bulwark_spidertron_mk1 = {
     },
     movement_energy_consumption = "250kW",
     automatic_weapon_cycling = false,
-    chain_shooting_cooldown_modifier = 0.35, --modified
+    chain_shooting_cooldown_modifier = 3, --modified
     spider_engine = {
       	legs = {
 	        { -- 1
@@ -269,13 +270,13 @@ end
 data:extend{
 	bulwark_spidertron_mk1,
 	bulwark_spidertron_mk1_remnants,
-	make_bulwark_spidertron_mk1_leg(1),
-	make_bulwark_spidertron_mk1_leg(2),
-	make_bulwark_spidertron_mk1_leg(3),
-	make_bulwark_spidertron_mk1_leg(4),
-	make_bulwark_spidertron_mk1_leg(5),
-	make_bulwark_spidertron_mk1_leg(6),
-	make_bulwark_spidertron_mk1_leg(7),
-	make_bulwark_spidertron_mk1_leg(8),
+	utils.make_spidertron_leg("bulwark-spidertron-mk1", 0.6, 0.06, 0.015, 1, 1, bulwark_spidertron_mk1_animations),
+	utils.make_spidertron_leg("bulwark-spidertron-mk1", 0.6, 0.06, 0.015, 1, 2, bulwark_spidertron_mk1_animations),
+	utils.make_spidertron_leg("bulwark-spidertron-mk1", 0.6, 0.06, 0.015, 1, 3, bulwark_spidertron_mk1_animations),
+	utils.make_spidertron_leg("bulwark-spidertron-mk1", 0.6, 0.06, 0.015, 1, 4, bulwark_spidertron_mk1_animations),
+	utils.make_spidertron_leg("bulwark-spidertron-mk1", 0.6, 0.06, 0.015, 1, 5, bulwark_spidertron_mk1_animations),
+	utils.make_spidertron_leg("bulwark-spidertron-mk1", 0.6, 0.06, 0.015, 1, 6, bulwark_spidertron_mk1_animations),
+	utils.make_spidertron_leg("bulwark-spidertron-mk1", 0.6, 0.06, 0.015, 1, 7, bulwark_spidertron_mk1_animations),
+	utils.make_spidertron_leg("bulwark-spidertron-mk1", 0.6, 0.06, 0.015, 1, 8, bulwark_spidertron_mk1_animations),
 }
 

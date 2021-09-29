@@ -1,4 +1,4 @@
-local sounds = require("__base__.prototypes.entity.demo-sounds")
+local sounds = require("__base__.prototypes.entity.sounds")
 
 local spidertron_mkn1_rocket_launcher_1 = {
 	type = "gun",

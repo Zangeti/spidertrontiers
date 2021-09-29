@@ -1,4 +1,4 @@
-local sounds = require("__base__.prototypes.entity.demo-sounds")
+local sounds = require("__base__.prototypes.entity.sounds")
 
 local scout_spidertron_mk2_cannon_1 = {
     type = "gun",
@@ -12,7 +12,7 @@ local scout_spidertron_mk2_cannon_1 = {
     attack_parameters = {
       	type = "projectile",
       	ammo_category = "cannon-shell",
-      	cooldown = 250,
+      	cooldown = 180,
       	movement_slow_down_factor = 0,
       	projectile_creation_distance = 0,
       	projectile_center = {0, 0},

@@ -1,4 +1,4 @@
-local sounds = require("__base__.prototypes.entity.demo-sounds")
+local sounds = require("__base__.prototypes.entity.sounds")
 local voyage_spidertron_mk2_animations = require("__spidertrontiers__.spidertron_animations.voyage_spidertron_mk2-animations")
 local ground_triggers = require("__spidertrontiers__.prototypes.ground_triggers")
 
@@ -13,6 +13,7 @@ local voyage_spidertron_mk2 = {
     close_sound = { filename = "__base__/sound/spidertron/spidertron-door-close.ogg", volume = 0.4 },
     sound_minimum_speed = 0.1,
     sound_scaling_ratio = 0.6,
+    trash_inventory_size = 12,
     working_sound = {
       	sound = {
 	        filename = "__base__/sound/spidertron/spidertron-vox.ogg",
@@ -83,7 +84,7 @@ local voyage_spidertron_mk2 = {
     dying_explosion = "spidertron-explosion",
     energy_per_hit_point = 1,
     guns = { "voyage-spidertron-mk2-rocket-launcher-1", "voyage-spidertron-mk2-rocket-launcher-2"},
-    inventory_size = 100,
+    inventory_size = 110,
     equipment_grid = "voyage-spidertron-mk2-equipment-grid",
     height = 1.5,
     torso_rotation_speed = 0.005,
@@ -95,7 +96,7 @@ local voyage_spidertron_mk2 = {
     },
     movement_energy_consumption = "250kW",
     automatic_weapon_cycling = true,
-    chain_shooting_cooldown_modifier = 1.2, --modified
+    chain_shooting_cooldown_modifier = 2.5, --modified
     spider_engine = {
       	legs = {
 	        { -- 1
@@ -283,15 +284,15 @@ end
 data:extend{
 	voyage_spidertron_mk2,
 	voyage_spidertron_mk2_remnants,
-	make_voyage_spidertron_mk2_leg(1),
-	make_voyage_spidertron_mk2_leg(2),
-	make_voyage_spidertron_mk2_leg(3),
-	make_voyage_spidertron_mk2_leg(4),
-	make_voyage_spidertron_mk2_leg(5),
-	make_voyage_spidertron_mk2_leg(6),
-	make_voyage_spidertron_mk2_leg(7),
-	make_voyage_spidertron_mk2_leg(8),
-	make_voyage_spidertron_mk2_leg(9),
-	make_voyage_spidertron_mk2_leg(10),
+	utils.make_spidertron_leg("voyage-spidertron-mk2", 1, 0.06, 0.03, 1, 1, voyage_spidertron_mk2_animations),
+	utils.make_spidertron_leg("voyage-spidertron-mk2", 1, 0.06, 0.03, 1, 2, voyage_spidertron_mk2_animations),
+	utils.make_spidertron_leg("voyage-spidertron-mk2", 1, 0.06, 0.03, 1, 3, voyage_spidertron_mk2_animations),
+	utils.make_spidertron_leg("voyage-spidertron-mk2", 1, 0.06, 0.03, 1, 4, voyage_spidertron_mk2_animations),
+	utils.make_spidertron_leg("voyage-spidertron-mk2", 1, 0.06, 0.03, 1, 5, voyage_spidertron_mk2_animations),
+	utils.make_spidertron_leg("voyage-spidertron-mk2", 1, 0.06, 0.03, 1, 6, voyage_spidertron_mk2_animations),
+	utils.make_spidertron_leg("voyage-spidertron-mk2", 1, 0.06, 0.03, 1, 7, voyage_spidertron_mk2_animations),
+	utils.make_spidertron_leg("voyage-spidertron-mk2", 1, 0.06, 0.03, 1, 8, voyage_spidertron_mk2_animations),
+	utils.make_spidertron_leg("voyage-spidertron-mk2", 1, 0.06, 0.03, 1, 9, voyage_spidertron_mk2_animations),
+	utils.make_spidertron_leg("voyage-spidertron-mk2", 1, 0.06, 0.03, 1, 10, voyage_spidertron_mk2_animations),
 }
 

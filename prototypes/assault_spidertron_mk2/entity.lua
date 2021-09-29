@@ -1,4 +1,4 @@
-local sounds = require("__base__.prototypes.entity.demo-sounds")
+local sounds = require("__base__.prototypes.entity.sounds")
 local assault_spidertron_mk2_animations = require("__spidertrontiers__.spidertron_animations.assault_spidertron_mk2-animations")
 local ground_triggers = require("__spidertrontiers__.prototypes.ground_triggers")
 
@@ -13,6 +13,7 @@ local assault_spidertron_mk2 = {
     close_sound = { filename = "__base__/sound/spidertron/spidertron-door-close.ogg", volume = 0.4 },
     sound_minimum_speed = 0.1,
     sound_scaling_ratio = 0.6,
+    trash_inventory_size = 10,
     working_sound = {
       	sound = {
 	        filename = "__base__/sound/spidertron/spidertron-vox.ogg",
@@ -95,7 +96,7 @@ local assault_spidertron_mk2 = {
     },
     movement_energy_consumption = "250kW",
     automatic_weapon_cycling = true,
-    chain_shooting_cooldown_modifier = 1.5, --modified
+    chain_shooting_cooldown_modifier = 1.55, --modified
     spider_engine = {
       	legs = {
 			{-- 1
@@ -248,10 +249,10 @@ end
 data:extend{
 	assault_spidertron_mk2,
 	assault_spidertron_mk2_remnants,
-	make_assault_spidertron_mk2_leg(1),
-	make_assault_spidertron_mk2_leg(2),
-	make_assault_spidertron_mk2_leg(3),
-	make_assault_spidertron_mk2_leg(4),
-	make_assault_spidertron_mk2_leg(5),
+	utils.make_spidertron_leg("assault-spidertron-mk2", 0.8, 0.06, 0.08, 1, 1, assault_spidertron_mk2_animations),
+	utils.make_spidertron_leg("assault-spidertron-mk2", 0.8, 0.06, 0.08, 1, 2, assault_spidertron_mk2_animations),
+	utils.make_spidertron_leg("assault-spidertron-mk2", 0.8, 0.06, 0.08, 1, 3, assault_spidertron_mk2_animations),
+	utils.make_spidertron_leg("assault-spidertron-mk2", 0.8, 0.06, 0.08, 1, 4, assault_spidertron_mk2_animations),
+	utils.make_spidertron_leg("assault-spidertron-mk2", 0.8, 0.06, 0.08, 1, 5, assault_spidertron_mk2_animations),
 }
 

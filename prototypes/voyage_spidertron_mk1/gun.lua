@@ -1,4 +1,4 @@
-local sounds = require("__base__.prototypes.entity.demo-sounds")
+local sounds = require("__base__.prototypes.entity.sounds")
 
 local voyage_spidertron_mk1_rocket_launcher = {
 	type = "gun",
@@ -12,7 +12,7 @@ local voyage_spidertron_mk1_rocket_launcher = {
 	attack_parameters = {
 	    type = "projectile",
 	    ammo_category = "rocket",
-	    cooldown = 150,
+	    cooldown = 210,
 	   	range = 52,
 	    projectile_creation_distance = -0.5,
 	    projectile_center = {0, 0.3},

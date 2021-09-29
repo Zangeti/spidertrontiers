@@ -9,7 +9,7 @@ local assault_spidertron_mk2 = {
             recipe = "assault_spidertron_mk2"
         },
     },
-    prerequisites = {"assault_spidertron_mk1", "combat-robotics", "engine"},
+    prerequisites = {"assault_spidertron_mk1", "defender", "engine"},
     unit = {
         ingredients =
         {

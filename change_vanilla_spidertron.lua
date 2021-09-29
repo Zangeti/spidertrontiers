@@ -23,16 +23,12 @@ end
 data.raw["technology"]["spidertron"] = {
     type = "technology",
     name = "spidertron",
-    icon_size = 128,
+    icon_size = 256,
     icon = "__base__/graphics/technology/spidertron.png",
     effects = {
       	{
         	type = "unlock-recipe",
         	recipe = "spidertron"
-      	},
-      	{
-	        type = "unlock-recipe",
-	        recipe = "spidertron-remote"
       	},
     },
     prerequisites = {"spidertron_mk0", "military-4", "exoskeleton-equipment", "fusion-reactor-equipment", "rocket-control-unit", "effectivity-module-3" },
@@ -50,6 +46,13 @@ data.raw["technology"]["spidertron"] = {
     },
     order = "d-e-g"
 }
+
+if (settings.startup["change-spidertron-remote-recipe"].value == false) then
+    data.raw["technology"]["spidertron"].effects[#data.raw["technology"]["spidertron"].effects + 1] = {
+		type = "unlock-recipe",
+	    recipe = "spidertron-remote"
+    }
+end
 
 data.raw["item-with-entity-data"]["spidertron"] = {
     type = "item-with-entity-data",

@@ -1,3 +1,5 @@
+utils = require("__spidertrontiers__.prototypes.utils")
+
 require("__spidertrontiers__.prototypes.prototype_spidertron.gun")
 require("__spidertrontiers__.prototypes.prototype_spidertron.equipment_grid")
 require("__spidertrontiers__.prototypes.prototype_spidertron.entity")
@@ -90,3 +92,6 @@ require("__spidertrontiers__.prototypes.voyage_spidertron_mk2.recipe")
 require("__spidertrontiers__.prototypes.voyage_spidertron_mk2.technology")
 
 require("__spidertrontiers__.change_vanilla_spidertron")
+
+require("__spidertrontiers__.prototypes.spidertron_remote.recipe")
+require("__spidertrontiers__.prototypes.spidertron_remote.technology")

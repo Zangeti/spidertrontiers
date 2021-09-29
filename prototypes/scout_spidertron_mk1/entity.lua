@@ -1,4 +1,4 @@
-local sounds = require("__base__.prototypes.entity.demo-sounds")
+local sounds = require("__base__.prototypes.entity.sounds")
 local scout_spidertron_mk1_animations = require("__spidertrontiers__.spidertron_animations.scout_spidertron_mk1-animations")
 local ground_triggers = require("__spidertrontiers__.prototypes.ground_triggers")
 
@@ -13,6 +13,7 @@ local scout_spidertron_mk1 = {
     close_sound = { filename = "__base__/sound/spidertron/spidertron-door-close.ogg", volume = 0.4 },
     sound_minimum_speed = 0.1,
     sound_scaling_ratio = 0.6,
+    trash_inventory_size = 6,
     working_sound = {
       	sound = {
 	        filename = "__base__/sound/spidertron/spidertron-vox.ogg",
@@ -87,7 +88,7 @@ local scout_spidertron_mk1 = {
     equipment_grid = "scout-spidertron-mk1-equipment-grid",
     height = 2.5,
     torso_rotation_speed = 0.005,
-    chunk_exploration_radius = 3, --modified
+    chunk_exploration_radius = 4, --modified
     selection_priority = 51,
     graphics_set = scout_spidertron_mk1_animations.torso,
     energy_source = {
@@ -95,7 +96,7 @@ local scout_spidertron_mk1 = {
     },
     movement_energy_consumption = "250kW",
     automatic_weapon_cycling = false,
-    chain_shooting_cooldown_modifier = 0.35, --modified
+    chain_shooting_cooldown_modifier = 3, --modified
     spider_engine = {
       	legs = {
 			{ -- 1
@@ -234,8 +235,8 @@ end
 data:extend{
 	scout_spidertron_mk1,
 	scout_spidertron_mk1_remnants,
-	make_scout_spidertron_mk1_leg(1),
-	make_scout_spidertron_mk1_leg(2),
-	make_scout_spidertron_mk1_leg(3),
+    utils.make_spidertron_leg("scout-spidertron-mk1", 1.2, 0.06, 0.1, 1, 1, scout_spidertron_mk1_animations),
+    utils.make_spidertron_leg("scout-spidertron-mk1", 1.2, 0.06, 0.1, 1, 2, scout_spidertron_mk1_animations),
+    utils.make_spidertron_leg("scout-spidertron-mk1", 1.2, 0.06, 0.1, 1, 3, scout_spidertron_mk1_animations),
 }
 

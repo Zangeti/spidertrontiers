@@ -9,7 +9,7 @@ local bulwark_spidertron_mk2 = {
             recipe = "bulwark_spidertron_mk2"
         },
     },
-    prerequisites = {"bulwark_spidertron_mk1", "electric-engine", "rocketry", "tanks"},
+    prerequisites = {"bulwark_spidertron_mk1", "electric-engine", "rocketry", "tank"},
     unit = {
         ingredients =
         {
