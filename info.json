@@ -6,6 +6,6 @@
     "contact": "",
     "homepage": "https://discord.gg/kC53xn2",
     "factorio_version": "1.1",
-    "dependencies": ["base >= 1.1", "? bobvehicleequipment >= 1.0.0", "? alien-biomes >= 0.6.4", "? space-exploration-postprocess >= 0.5.10"],
+    "dependencies": ["base >= 1.1", "? bobvehicleequipment >= 1.0.0", "? alien-biomes >= 0.6.4"],
     "description": "Adds 13 new unique Spidertrons! Wether high firepower, early game, speed, inventory size or fog war reveal, there is something for everyone."
 }
