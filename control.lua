@@ -1,5 +1,5 @@
 -- control.lua
-local ground_triggers = require("__spidertrontiers__.prototypes.ground_triggers")
+local ground_triggers = require("__spidertrontiers-circulardependency__.prototypes.ground_triggers")
 
 script.on_event({defines.events.on_built_entity},
 	function (event)

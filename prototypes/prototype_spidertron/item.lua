@@ -1,7 +1,7 @@
 local prototype_spidertron = {
     type = "item-with-entity-data",
     name = "prototype_spidertron",
-    icon = "__spidertrontiers__/graphics/icons/prototype_spidertron.png",
+    icon = "__spidertrontiers-circulardependency__/graphics/icons/prototype_spidertron.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "transport",
     order = "b[personal-transport]-c[spidertron]-a[spider]",

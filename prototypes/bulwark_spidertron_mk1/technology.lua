@@ -2,7 +2,7 @@ local bulwark_spidertron_mk1 = {
     type = "technology",
     name = "bulwark_spidertron_mk1",
     icon_size = 128,
-    icon = "__spidertrontiers__/graphics/technology/bulwark_spidertron_mk1.png",
+    icon = "__spidertrontiers-circulardependency__/graphics/technology/bulwark_spidertron_mk1.png",
     effects = {
         {
             type = "unlock-recipe",

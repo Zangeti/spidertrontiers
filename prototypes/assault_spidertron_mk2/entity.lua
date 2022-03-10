@@ -1,13 +1,13 @@
 local sounds = require("__base__.prototypes.entity.sounds")
-local assault_spidertron_mk2_animations = require("__spidertrontiers__.spidertron_animations.assault_spidertron_mk2-animations")
-local ground_triggers = require("__spidertrontiers__.prototypes.ground_triggers")
+local assault_spidertron_mk2_animations = require("__spidertrontiers-circulardependency__.spidertron_animations.assault_spidertron_mk2-animations")
+local ground_triggers = require("__spidertrontiers-circulardependency__.prototypes.ground_triggers")
 
 local assault_spidertron_mk2 = {
     type = "spider-vehicle",
     name = "assault_spidertron_mk2",
     collision_box = {{-1, -1}, {1, 1}},
     selection_box = {{-1, -1}, {1, 1}},
-    icon = "__spidertrontiers__/graphics/icons/assault_spidertron_mk2.png",
+    icon = "__spidertrontiers-circulardependency__/graphics/icons/assault_spidertron_mk2.png",
     mined_sound = {filename = "__core__/sound/deconstruct-large.ogg",volume = 0.8},
     open_sound = { filename = "__base__/sound/spidertron/spidertron-door-open.ogg", volume= 0.35 },
     close_sound = { filename = "__base__/sound/spidertron/spidertron-door-close.ogg", volume = 0.4 },
@@ -75,7 +75,7 @@ local assault_spidertron_mk2 = {
       	}
     },
     minimap_representation = {
-      	filename = "__spidertrontiers__/graphics/entity/assault_spidertron_mk2/spidertron-map.png",
+      	filename = "__spidertrontiers-circulardependency__/graphics/entity/assault_spidertron_mk2/spidertron-map.png",
       	flags = {"icon"},
       	size = {128, 128},
       	scale = 0.5
@@ -143,7 +143,7 @@ local assault_spidertron_mk2 = {
 local assault_spidertron_mk2_remnants = {
     type = "corpse",
     name = "assault-spidertron-mk2-remnants",
-    icon = "__spidertrontiers__/graphics/icons/assault_spidertron_mk2.png",
+    icon = "__spidertrontiers-circulardependency__/graphics/icons/assault_spidertron_mk2.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "not-on-map"},
     subgroup = "transport-remnants",
@@ -159,7 +159,7 @@ local assault_spidertron_mk2_remnants = {
     {
       	layers = {
         	{
-	          	filename = "__spidertrontiers__/graphics/entity/assault_spidertron_mk2/remnants/spidertron-remnants.png",
+	          	filename = "__spidertrontiers-circulardependency__/graphics/entity/assault_spidertron_mk2/remnants/spidertron-remnants.png",
 	          	line_length = 1,
 	          	width = 224,
 	          	height = 224,
@@ -169,7 +169,7 @@ local assault_spidertron_mk2_remnants = {
 	          	direction_count = 1,
 	         	shift = util.by_pixel(0, 0),
 	          	r_version = {
-		            filename = "__spidertrontiers__/graphics/entity/assault_spidertron_mk2/remnants/hr-spidertron-remnants.png",
+		            filename = "__spidertrontiers-circulardependency__/graphics/entity/assault_spidertron_mk2/remnants/hr-spidertron-remnants.png",
 		            line_length = 1,
 		            width = 448,
 		            height = 448,
@@ -183,7 +183,7 @@ local assault_spidertron_mk2_remnants = {
         	},
         	{
 	          	priority = "low",
-	          	filename = "__spidertrontiers__/graphics/entity/assault_spidertron_mk2/remnants/mask/spidertron-remnants-mask.png",
+	          	filename = "__spidertrontiers-circulardependency__/graphics/entity/assault_spidertron_mk2/remnants/mask/spidertron-remnants-mask.png",
 	          	width = 184,
 	          	height = 176,
 	          	frame_count = 1,
@@ -193,7 +193,7 @@ local assault_spidertron_mk2_remnants = {
 	          	shift = util.by_pixel(9, 1),
 	          	hr_version = {
 		            priority = "low",
-		            filename = "__spidertrontiers__/graphics/entity/assault_spidertron_mk2/remnants/mask/hr-spidertron-remnants-mask.png",
+		            filename = "__spidertrontiers-circulardependency__/graphics/entity/assault_spidertron_mk2/remnants/mask/hr-spidertron-remnants-mask.png",
 		            width = 366,
 		            height = 350,
 		            frame_count = 1,
@@ -216,7 +216,7 @@ function make_assault_spidertron_mk2_leg(number, base_sprite, ending_sprite)
 	    localised_name = {"entity-name.spidertron-leg"},
 	    collision_box = {{-0.01, -0.01}, {0.01, 0.01}},
 	    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-	    icon = "__spidertrontiers__/graphics/icons/assault_spidertron_mk2.png",
+	    icon = "__spidertrontiers-circulardependency__/graphics/icons/assault_spidertron_mk2.png",
 	    icon_size = 64, icon_mipmaps = 4,
 	    walking_sound_volume_modifier = 0.6, --modified
 	    working_sound = 

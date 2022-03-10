@@ -2,7 +2,7 @@ local spidertron_mk3 = {
     type = "technology",
     name = "spidertron_mk3",
     icon_size = 128,
-    icon = "__spidertrontiers__/graphics/technology/spidertron_mk3.png",
+    icon = "__spidertrontiers-circulardependency__/graphics/technology/spidertron_mk3.png",
     effects = {
         {
             type = "unlock-recipe",

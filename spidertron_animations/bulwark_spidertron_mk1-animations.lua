@@ -157,14 +157,14 @@ local leg_lower_part_graphics_definitions =
 
   top_end =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-lower-end-A.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-lower-end-A.png",
     width = 20,
     height = 50,
     variation_count = 8,
     shift = util.by_pixel(0, 20),
     hr_version =
     {
-      filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/hr-spidertron-legs-lower-end-A.png",
+      filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/hr-spidertron-legs-lower-end-A.png",
       width = 40,
       height = 98,
       variation_count = 8,
@@ -175,7 +175,7 @@ local leg_lower_part_graphics_definitions =
 
   middle =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-lower-stretchable.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-lower-stretchable.png",
     width = 26,
     height = 192,
     variation_count = 8,
@@ -183,7 +183,7 @@ local leg_lower_part_graphics_definitions =
     shift = util.by_pixel(1, 0),
     hr_version =
     {
-      filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/hr-spidertron-legs-lower-stretchable.png",
+      filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/hr-spidertron-legs-lower-stretchable.png",
       width = 50,
       height = 384,
       variation_count = 8,
@@ -194,14 +194,14 @@ local leg_lower_part_graphics_definitions =
 
   bottom_end =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-lower-end-B.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-lower-end-B.png",
     width = 18,
     height = 46,
     variation_count = 8,
     shift = util.by_pixel(0, -21),
     hr_version =
     {
-      filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/hr-spidertron-legs-lower-end-B.png",
+      filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/hr-spidertron-legs-lower-end-B.png",
       width = 34,
       height = 92,
       variation_count = 8,
@@ -212,7 +212,7 @@ local leg_lower_part_graphics_definitions =
 
   reflection_top_end =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-lower-end-A-water-reflection.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-lower-end-A-water-reflection.png",
     width = 56,
     height = 110,
     variation_count = 1,
@@ -222,7 +222,7 @@ local leg_lower_part_graphics_definitions =
 
   reflection_middle =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-lower-stretchable-water-reflection.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-lower-stretchable-water-reflection.png",
     width = 72,
     height = 384,
     variation_count = 1,
@@ -232,7 +232,7 @@ local leg_lower_part_graphics_definitions =
 
   reflection_bottom_end =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-lower-end-B-water-reflection.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-lower-end-B-water-reflection.png",
     width = 52,
     height = 104,
     variation_count = 1,
@@ -247,14 +247,14 @@ local leg_upper_part_graphics_definitions =
 
   top_end =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-upper-end-A.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-upper-end-A.png",
     width = 22,
     height = 44,
     variation_count = 8,
     shift = util.by_pixel(0, 18),
     hr_version =
     {
-      filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/hr-spidertron-legs-upper-end-A.png",
+      filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/hr-spidertron-legs-upper-end-A.png",
       width = 42,
       height = 86,
       variation_count = 8,
@@ -265,7 +265,7 @@ local leg_upper_part_graphics_definitions =
 
   middle =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-upper-stretchable.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-upper-stretchable.png",
     width = 30,
     height = 128,
     variation_count = 8,
@@ -273,7 +273,7 @@ local leg_upper_part_graphics_definitions =
     shift = util.by_pixel(-2, 0),
     hr_version =
     {
-      filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/hr-spidertron-legs-upper-stretchable.png",
+      filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/hr-spidertron-legs-upper-stretchable.png",
       width = 60,
       height = 256,
       variation_count = 8,
@@ -284,14 +284,14 @@ local leg_upper_part_graphics_definitions =
 
   bottom_end =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-upper-end-B.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-upper-end-B.png",
     width = 20,
     height = 30,
     variation_count = 8,
     shift = util.by_pixel(1, -9),
     hr_version =
     {
-      filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/hr-spidertron-legs-upper-end-B.png",
+      filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/hr-spidertron-legs-upper-end-B.png",
       width = 38,
       height = 58,
       variation_count = 8,
@@ -302,7 +302,7 @@ local leg_upper_part_graphics_definitions =
 
   reflection_top_end =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-upper-end-A-water-reflection.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-upper-end-A-water-reflection.png",
     width = 64,
     height = 96,
     variation_count = 1,
@@ -312,7 +312,7 @@ local leg_upper_part_graphics_definitions =
 
   reflection_middle =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-upper-stretchable-water-reflection.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-upper-stretchable-water-reflection.png",
     width = 80,
     height = 256,
     variation_count = 1,
@@ -322,7 +322,7 @@ local leg_upper_part_graphics_definitions =
 
   reflection_bottom_end =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-upper-end-B-water-reflection.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-upper-end-B-water-reflection.png",
     width = 56,
     height = 74,
     variation_count = 1,
@@ -333,14 +333,14 @@ local leg_upper_part_graphics_definitions =
 
 local leg_joint_graphics_definitions =
 {
-  filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-knee.png",
+  filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/spidertron-legs-knee.png",
   width = 12,
   height = 14,
   variation_count = 8,
   shift = util.by_pixel(1, 0),
   hr_version =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/legs/hr-spidertron-legs-knee.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/legs/hr-spidertron-legs-knee.png",
     width = 22,
     height = 28,
     variation_count = 8,
@@ -356,7 +356,7 @@ local spidertron_torso_graphics_set =
     layers =
     {
       {
-        filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/torso/spidertron-body-bottom.png",
+        filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/torso/spidertron-body-bottom.png",
         width = 64,
         height = 54,
         line_length = 1,
@@ -364,7 +364,7 @@ local spidertron_torso_graphics_set =
         shift = util.by_pixel(0, 0),
         hr_version =
         {
-          filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/torso/hr-spidertron-body-bottom.png",
+          filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/torso/hr-spidertron-body-bottom.png",
           width = 126,
           height = 106,
           line_length = 1,
@@ -374,7 +374,7 @@ local spidertron_torso_graphics_set =
         }
       },
       {
-        filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/torso/spidertron-body-bottom-mask.png",
+        filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/torso/spidertron-body-bottom-mask.png",
         width = 62,
         height = 46,
         line_length = 1,
@@ -383,7 +383,7 @@ local spidertron_torso_graphics_set =
         shift = util.by_pixel(0, 4),
         hr_version =
         {
-          filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/torso/hr-spidertron-body-bottom-mask.png",
+          filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/torso/hr-spidertron-body-bottom-mask.png",
           width = 124,
           height = 90,
           line_length = 1,
@@ -398,7 +398,7 @@ local spidertron_torso_graphics_set =
 
   shadow_base_animation =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/torso/spidertron-body-bottom-shadow.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/torso/spidertron-body-bottom-shadow.png",
     width = 72,
     height = 48,
     line_length = 1,
@@ -407,7 +407,7 @@ local spidertron_torso_graphics_set =
     shift = util.by_pixel(-1, -1),
     hr_version =
     {
-      filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/torso/hr-spidertron-body-bottom-shadow.png",
+      filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/torso/hr-spidertron-body-bottom-shadow.png",
       width = 144,
       height = 96,
       line_length = 1,
@@ -423,7 +423,7 @@ local spidertron_torso_graphics_set =
     layers =
     {
       {
-        filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/torso/spidertron-body.png",
+        filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/torso/spidertron-body.png",
         width = 66,
         height = 70,
         line_length = 8,
@@ -431,7 +431,7 @@ local spidertron_torso_graphics_set =
         shift = util.by_pixel(0, -19),
         hr_version =
         {
-          filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/torso/hr-spidertron-body.png",
+          filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/torso/hr-spidertron-body.png",
           width = 132,
           height = 138,
           line_length = 8,
@@ -441,7 +441,7 @@ local spidertron_torso_graphics_set =
         }
       },
       {
-        filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/torso/spidertron-body-mask.png",
+        filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/torso/spidertron-body-mask.png",
         width = 66,
         height = 50,
         line_length = 8,
@@ -450,7 +450,7 @@ local spidertron_torso_graphics_set =
         shift = util.by_pixel(0, -14),
         hr_version =
         {
-          filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/torso/hr-spidertron-body-mask.png",
+          filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/torso/hr-spidertron-body-mask.png",
           width = 130,
           height = 100,
           line_length = 8,
@@ -465,7 +465,7 @@ local spidertron_torso_graphics_set =
 
   shadow_animation =
   {
-    filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/torso/spidertron-body-shadow.png",
+    filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/torso/spidertron-body-shadow.png",
     width = 96,
     height = 48,
     line_length = 8,
@@ -474,7 +474,7 @@ local spidertron_torso_graphics_set =
     shift = util.by_pixel(26, 1),
     hr_version =
     {
-      filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/torso/hr-spidertron-body-shadow.png",
+      filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/torso/hr-spidertron-body-shadow.png",
       width = 192,
       height = 94,
       line_length = 8,
@@ -489,7 +489,7 @@ local spidertron_torso_graphics_set =
   {
     pictures =
     {
-      filename = "__spidertrontiers__/graphics/entity/bulwark_spidertron_mk1/torso/spidertron-body-water-reflection.png",
+      filename = "__spidertrontiers-circulardependency__/graphics/entity/bulwark_spidertron_mk1/torso/spidertron-body-water-reflection.png",
       width = 448,
       height = 448,
       variation_count = 1,

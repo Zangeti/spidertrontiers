@@ -1,7 +1,7 @@
 local bulwark_spidertron_mk1 = {
     type = "item-with-entity-data",
     name = "bulwark_spidertron_mk1",
-    icon = "__spidertrontiers__/graphics/icons/bulwark_spidertron_mk1.png",
+    icon = "__spidertrontiers-circulardependency__/graphics/icons/bulwark_spidertron_mk1.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "transport",
     place_result="bulwark_spidertron_mk1",
